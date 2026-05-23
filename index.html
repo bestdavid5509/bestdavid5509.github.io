@@ -71,31 +71,43 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
+								<p>The best way to reach me is email: <a href="mailto:dtbest5@gmail.com">dtbest5@gmail.com</a>. You can also send a message using the form below, or find me on LinkedIn and GitHub.</p>
+								<div data-fs-success style="display:none;"><p>Thanks &mdash; your message has been sent.</p></div>
+								<div data-fs-error style="display:none;"><p>Something went wrong. Please email me directly at <a href="mailto:dtbest5@gmail.com">dtbest5@gmail.com</a>.</p></div>
+								<form id="contact-form" method="post" action="#">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
+											<input type="text" name="name" id="name" data-fs-field="name" />
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
+											<input type="text" name="email" id="email" data-fs-field="email" />
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
+											<textarea name="message" id="message" rows="4" data-fs-field="message"></textarea>
 										</div>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="submit" value="Send Message" class="primary" data-fs-submit-btn /></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form>
+								<script>
+									window.formspree = window.formspree || function () {
+										(formspree.q = formspree.q || []).push(arguments);
+									};
+									formspree('initForm', {
+										formElement: '#contact-form',
+										formId: 'mgoqzzbo'
+									});
+								</script>
+								<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/david-best-52165a173/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/bestdavid5509" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="mailto:dtbest5@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</article>
 
