@@ -11,6 +11,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			[data-fs-success], [data-fs-error] { display: none; }
+			[data-fs-success][data-fs-active], [data-fs-error][data-fs-active] { display: block; }
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -72,8 +76,8 @@
 							<article id="contact">
 								<h2 class="major">Contact</h2>
 								<p>The best way to reach me is email: <a href="mailto:dtbest5@gmail.com">dtbest5@gmail.com</a>. You can also send a message using the form below, or find me on LinkedIn and GitHub.</p>
-								<div data-fs-success style="display:none;"><p>Thanks &mdash; your message has been sent.</p></div>
-								<div data-fs-error style="display:none;"><p>Something went wrong. Please email me directly at <a href="mailto:dtbest5@gmail.com">dtbest5@gmail.com</a>.</p></div>
+								<div data-fs-success><p>Thanks &mdash; your message has been sent.</p></div>
+								<div data-fs-error><p>Something went wrong. Please email me directly at <a href="mailto:dtbest5@gmail.com">dtbest5@gmail.com</a>.</p></div>
 								<form id="contact-form" method="post" action="#">
 									<div class="fields">
 										<div class="field half">
